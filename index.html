@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECHOES OF VALOR</title>
+        <style>@import url("index.css");</style>
+        <!-- Collega altri eventuali CSS qui -->
+    </head>
+    <body onload="full()">
+        <img src="Echoes-of-valor-08-05-2025.png" alt="Echoes of Valor">
+        
+        <!-- Collega gli script -->
+        <script src="index.js"></script>
+        
+        <div class="container" align="center">
+            <!-- Menu a tendina per la selezione del livello -->
+            <select id="levelSelect">
+                <option value="livello0/livello_0.html">Livello 1</option>
+                <option value="livello1/livello1.html">Livello 2</option>
+                <!-- Aggiungi altri livelli se necessario -->
+            </select><br><br><br>
+
+            <!-- Pulsante per navigare al livello selezionato -->
+            <button onclick="navigateToLevel()">Vai al livello selezionato</button>
+        </div>
+
+        <!-- Script per il menu a tendina e il pulsante -->
+        <script>
+            function navigateToLevel() {
+                // Ottiene il valore selezionato dal menu a tendina e reindirizza l'utente alla pagina corrispondente
+                var selectedLevel = document.getElementById('levelSelect').value;
+                window.location.href = selectedLevel; // Reindirizzamento al livello
+            }
+        </script>
+    </body>
+</html>
